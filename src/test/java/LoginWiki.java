@@ -21,16 +21,17 @@ public void openWikipediaTest() throws InterruptedException {
     driver.findElement(By.id("js-link-box-en")).click();
     driver.findElement(By.id("pt-login")).click();
     Thread.sleep(3000);
-    driver.findElement(By.id("wpPassword1")).click();
-    driver.findElement(By.id("wpPassword1")).clear();
-    driver.findElement(By.id("wpPassword1")).sendKeys("Shirman");
-    Thread.sleep(3000);
     driver.findElement(By.id("wpName1")).click();
     driver.findElement(By.id("wpName1")).clear();
     driver.findElement(By.id("wpName1")).sendKeys("Nikita");
     Thread.sleep(3000);
+    driver.findElement(By.id("wpPassword1")).click();
+    driver.findElement(By.id("wpPassword1")).clear();
+    driver.findElement(By.id("wpPassword1")).sendKeys("Shirman");
+    Thread.sleep(3000);
     driver.findElement(By.id("wpLoginAttempt")).click();
     Thread.sleep(3000);
+
 }
 
 
